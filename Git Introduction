@@ -1,0 +1,53 @@
+Git -> 
+
+Source Code Management Tool: Git
+
+Git is a widely-used distributed version control system designed to 
+track changes in source code during software development. It helps developers collaborate, 
+maintain version history, and manage their codebase effectively.
+
+Key Features of Git
+
+1. Version controls 
+2.Distributed System
+3.branching and merging
+4.collaboration 
+5.staging area
+6.lightweight
+
+Types of SCM Tools
+
+	1.	Centralized Version Control Systems (CVCS):
+
+	2.	Distributed Version Control Systems (DVCS)
+
+
+Local system (laptop) ——work -> code (working stage) ->>> push remote (GitHub,gitlab,)
+
+Dev
+
+Local pc /workstation code -> local repo -> remote  repo
+
+Hw-> diff CVCS vs DVCS
+
+Git Workflow
+	1.	Clone or Initialize:
+	•	Clone an existing repository using git clone <repository-url>.
+	•	Or initialize a new repository using git init.
+	2.	Edit Files:
+	•	Work on your project files in the working directory.
+	3.	Stage Changes:
+	•	Use git add <file> or git add . to stage changes.
+	4.	Commit Changes:
+	•	Use git commit -m "commit message" to save your changes to the repository.
+	5.	Push to Remote:
+	•	Push committed changes to a remote repository using git push.
+	6.	Pull Updates:
+	•	Pull updates from the remote repository using git pull to sync your local repository.
+	7.	Branching:
+	•	Create a new branch for feature development using git branch <branch-name>.
+	•	Switch branches using git checkout <branch-name> or git switch <branch-name>.
+	8.	Merge Changes:
+	•	Merge feature branches into the main branch using git merge.
+	9.	Resolve Conflicts:
+	•	Handle merge conflicts if changes from different branches overlap.
