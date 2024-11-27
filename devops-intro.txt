@@ -1,0 +1,73 @@
+What is DevOps :-
+		DevOps is a set of practices that combines software development (Dev) and IT operations (Ops
+) to shorten the system development life cycle and deliver high-quality software continuously.
+
+Devops -: dev, testing, devops 
+
+Collaborations 
+Automations
+CI 
+
+- Benefits 
+Faster delivery
+Collaborations
+Improved scalebilty
+Env -> 
+Dev
+Test
+UAT & QAT
+Prod
+
+
+DevOps Lifecycle 
+- plan  
+- Develop  
+-  Build  10 file ->  index.html , pom.xml , .jar .war 
+- test 
+- release
+-deploy
+-operate 
+-monitor
+
+Software industry 
+
+- system soft
+- application software 
+- middlewear 
+
+  
+Key roles in the software industry 
+- soft developer 
+- quality assurance engineer	
+- DevOps engineer 
+- product manger  
+-UI/UX designer 
+
+Type of IT Companies
+- service base
+- product base 
+- startup 
+- cloud service
+- IT consulting firms
+	
+what is SDLC 
+
+-> waterfall
+
+- requirement analys
+-system design
+-implementation 
+- testing 
+-deployment 
+- maintances
+
+->agile 2.0 
+-> DevOps 
+
+APIs
+
+Types
+- open API <Public>
+- Internal Api  <private APIs>
+- parter APIs
+-composite APIs
