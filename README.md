@@ -56,6 +56,8 @@
 
 - Working Directory → Staging Area → Local Repository → Remote Repository (GitHub)
 
+![Git Workflow](images/git-lifecycle.jpeg)
+
 ### Basic Steps:
 
 1. `git init` – Initialize a new repository
@@ -169,6 +171,7 @@ Hi yourusername! You've successfully authenticated, but GitHub does not provide 
 | `git remote -v` | Show remote repository URLs |
 | `git push origin <branch>` | Push commits to GitHub |
 | `git pull origin <branch>` | Fetch and merge changes from GitHub |
+| `git checkout HEAD <file>` | Revert a specific file to last committed state |
 
 
 ## 🌟 Best Practices
