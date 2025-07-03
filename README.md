@@ -153,9 +153,23 @@ Hi yourusername! You've successfully authenticated, but GitHub does not provide 
 
 ## 🛠️ Basic Git Commands
 
-### Command Description
+| Command | Description |
+|--------|-------------|
+| `git init` | Initialize a new repository |
+| `git clone <url>` | Clone a remote repo to local |
+| `git status` | Check current repo status |
+| `git add <file>` | Stage a specific file |
+| `git add .` | Stage all changed files |
+| `git commit -m "message"` | Commit changes with a message |
+| `git log` | Show commit history |
+| `git diff` | Show changes between commits or working tree |
+| `git branch` | List all branches |
+| `git checkout -b <branch>` | Create and switch to a new branch |
+| `git merge <branch>` | Merge a branch into current branch |
+| `git remote -v` | Show remote repository URLs |
+| `git push origin <branch>` | Push commits to GitHub |
+| `git pull origin <branch>` | Fetch and merge changes from GitHub |
 
-<pre> ## 🛠️ Basic Git Commands | Command | Description | |--------|-------------| | `git init` | Initialize a new repository | | `git clone &lt;url&gt;` | Clone a remote repo to local | | `git status` | Check current repo status | | `git add &lt;file&gt;` | Stage a file | | `git add .` | Stage all files | | `git commit -m "msg"` | Commit changes with a message | | `git log` | Show commit history | | `git diff` | Show file differences | | `git branch` | List branches | | `git checkout -b &lt;branch&gt;` | Create and switch to a new branch | | `git merge &lt;branch&gt;` | Merge another branch into current | | `git remote -v` | List connected remotes | | `git push origin &lt;branch&gt;` | Push changes to GitHub | | `git pull origin &lt;branch&gt;` | Pull changes from GitHub | </pre>
 
 ## 🌟 Best Practices
 
