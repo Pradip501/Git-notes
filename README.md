@@ -1,6 +1,7 @@
 # Git & GitHub Training Guide
 
 ## 📌 Table of Contents
+
 1. [Introduction to Git](#introduction-to-git)
 2. [Types of Version Control](#types-of-version-control)
 3. [Benefits of Using Git & GitHub](#benefits-of-using-git--github)
@@ -23,14 +24,17 @@
 ## 📂 Types of Version Control
 
 ### 1. **Local Version Control**
+
 - Changes are stored on a local system.
 - Limited collaboration and backup.
 
 ### 2. **Centralized Version Control (CVCS)**
+
 - Single central server (e.g., SVN).
 - Risk of data loss if the central server fails.
 
 ### 3. **Distributed Version Control (DVCS)**
+
 - Each user has a full copy of the repository.
 - Git is a DVCS. Changes can be pushed/pulled from/to remote repositories.
 
@@ -49,9 +53,11 @@
 ---
 
 ## 🔄 Git Workflow Overview
+
 - Working Directory → Staging Area → Local Repository → Remote Repository (GitHub)
 
 ### Basic Steps:
+
 1. `git init` – Initialize a new repository
 2. `git add` – Stage changes
 3. `git commit` – Commit staged changes
@@ -71,4 +77,16 @@
 4. Verify installation:
    ```bash
    git --version
+   ```
 
+## 🔐 Setting up SSH Key for GitHub
+
+# Step 1: Generate SSH Key
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+- Press Enter to accept default file location.
+- Enter a passphrase (optional).
+
+# Step 2: Start SSH Agent
