@@ -154,7 +154,7 @@ Hi yourusername! You've successfully authenticated, but GitHub does not provide 
 ## 🛠️ Basic Git Commands
 
 | Command | Description |
-|--------|-------------|
+|---------------|------------------|
 | `git init` | Initialize a new repository |
 | `git clone <url>` | Clone a remote repo to local |
 | `git status` | Check current repo status |
