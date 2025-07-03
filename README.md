@@ -79,14 +79,106 @@
    git --version
    ```
 
-## 🔐 Setting up SSH Key for GitHub
+## 🔐 Setting Up SSH Key for GitHub (Using RSA 4096-bit)
 
-#### Step 1: Generate SSH Key
+Follow these steps to generate and configure an SSH key to connect GitHub securely from your system.
+
+1. Check if SSH keys already exist
+
 ```bash
-ssh-keygen -t ed25519 -C "your_email@example.com"
+ls -al ~/.ssh
 ```
 
-- Press Enter to accept default file location.
-- Enter a passphrase (optional).
+If you see files like id_rsa and id_rsa.pub, you already have a key. You can use the existing key or generate a new one.
 
-### Step 2: Start SSH Agent
+2. Generate a New SSH Key
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "yourmail@gmail.com"
+```
+
+- Replace "yourmail@gmail.com" with your actual GitHub email.
+
+- When prompted:
+
+  - Press Enter to save in the default location (~/.ssh/id_rsa)
+
+  - Enter a passphrase (optional but recommended)
+
+3. Start the SSH Agent
+
+```bash
+eval "$(ssh-agent -s)"
+```
+
+4. Add Your SSH Private Key to the Agent
+
+```bash
+ssh-add ~/.ssh/id_rsa
+```
+
+5. Copy the Public Key to Clipboard
+
+```bash
+clip < ~/.ssh/id_rsa.pub
+```
+
+If clip doesn’t work, manually open the key using the next command and copy it:
+
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+
+6. Add the SSH Key to GitHub
+
+- Go to GitHub → Settings
+
+- Navigate to SSH and GPG keys
+
+- Click New SSH key
+
+- Paste the copied key and give it a recognizable title (e.g., "Work Laptop")
+
+7. Test the Connection
+
+```bash
+ssh -T git@github.com
+```
+
+On success, you will see a message like:
+
+Hi yourusername! You've successfully authenticated, but GitHub does not provide shell access.
+
+## ✅ Your SSH connection is now configured!
+
+## 🛠️ Basic Git Commands
+
+Command Description
+git init Initialize a new repository
+git clone <url> Clone a remote repo to local
+git status Check current repo status
+git add <file> Stage a file
+git add . Stage all files
+git commit -m "message" Commit changes with a message
+git log Show commit history
+git diff Show file differences
+git branch List branches
+git checkout -b <branch> Create and switch to a new branch
+git merge <branch> Merge another branch into current
+git remote -v List connected remotes
+git push origin <branch> Push changes to GitHub
+git pull origin <branch> Pull changes from GitHub
+
+## 🌟 Best Practices
+
+- Always write meaningful commit messages.
+
+- Use branches for features/fixes.
+
+- Pull latest changes before starting work.
+
+- Regularly push your work.
+
+- Resolve merge conflicts carefully.
+
+- Use .gitignore to exclude files like .env, node_modules, etc.
