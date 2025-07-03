@@ -81,7 +81,7 @@
 
 ## 🔐 Setting up SSH Key for GitHub
 
-# Step 1: Generate SSH Key
+#### Step 1: Generate SSH Key
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
@@ -89,4 +89,4 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 - Press Enter to accept default file location.
 - Enter a passphrase (optional).
 
-# Step 2: Start SSH Agent
+### Step 2: Start SSH Agent
