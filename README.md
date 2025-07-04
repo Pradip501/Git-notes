@@ -172,6 +172,7 @@ Hi yourusername! You've successfully authenticated, but GitHub does not provide 
 | `git push origin <branch>` | Push commits to GitHub |
 | `git pull origin <branch>` | Fetch and merge changes from GitHub |
 | `git checkout HEAD <file>` | Revert a specific file to last committed state |
+| `git revert <commit-hash>` | Used to undo changes made by a specific commit |
 
 
 ## 🌟 Best Practices
