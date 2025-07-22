@@ -324,10 +324,11 @@ This guide shows how to schedule a cron job in **cPanel** to run a script or tas
 
 Use `wget`, `curl`, or `lynx` to access the URL:
 
-#### Option 1: Using `wget`
+## Option 1: Using `wget`
 
 ```bash
 wget -q -O /dev/null https://yourdomain.com/your-script
+```
 ---
 
 # 📧 How to Create Webmail Accounts for a Domain Using cPanel
@@ -404,4 +405,3 @@ This guide explains how to create email addresses (e.g., `info@yourdomain.com`) 
 - Limit PHP versions per domain if needed via MultiPHP Manager.
 
 ---
-```
