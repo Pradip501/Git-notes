@@ -130,7 +130,8 @@ OR
 2. **Go to "Subdomains"**  
    Find it under the **Domains** section.
 
-3. **Fill in the Subdomain Form**  
+3. **Fill in the Subdomain Form**
+
    - **Subdomain**: `app` (or any prefix)
    - **Domain**: Select the main domain (e.g., `yourdomain.com`)
    - **Document Root**: Auto-filled (e.g., `public_html/app`)
@@ -149,16 +150,19 @@ This guide shows how to create a **MySQL database**, a **user**, and connect the
 ## ✅ Step-by-Step Instructions
 
 ### 1. **Log in to cPanel**
+
 - URL: `https://yourdomain.com/cpanel`
 
 ---
 
 ### 2. **Open "MySQL® Databases"**
+
 - Found under the **Databases** section.
 
 ---
 
 ### 3. **Create a New Database**
+
 - In the **Create New Database** field:
   - Enter a name (e.g., `myapp_db`)
   - Click **“Create Database”**
@@ -166,6 +170,7 @@ This guide shows how to create a **MySQL database**, a **user**, and connect the
 ---
 
 ### 4. **Create a New Database User**
+
 - Scroll down to **MySQL Users > Add New User**
   - Username: `myapp_user`
   - Password: (Use a strong password or the password generator)
@@ -174,6 +179,7 @@ This guide shows how to create a **MySQL database**, a **user**, and connect the
 ---
 
 ### 5. **Add User to Database**
+
 - Under **Add User to Database**:
   - Select the **user** and **database** you just created
   - Click **“Add”**
@@ -181,6 +187,7 @@ This guide shows how to create a **MySQL database**, a **user**, and connect the
 ---
 
 ### 6. **Set User Privileges**
+
 - Check **“All Privileges”**
 - Click **“Make Changes”**
 
@@ -193,6 +200,7 @@ Follow these steps to increase PHP configuration values like `upload_max_filesiz
 ---
 
 ## ✅ Step 1: Log in to cPanel
+
 - URL: `https://yourdomain.com/cpanel`
 
 ---
@@ -201,8 +209,8 @@ Follow these steps to increase PHP configuration values like `upload_max_filesiz
 
 - Go to **"Software"** section
 - Click on:
-  - ✅ **Select PHP Version** *(if available)* → then click **“Options”*  
-  - OR  
+  - ✅ **Select PHP Version** _(if available)_ → then click \*_“Options”_
+  - OR
   - ✅ **MultiPHP INI Editor**
 
 ---
@@ -210,15 +218,16 @@ Follow these steps to increase PHP configuration values like `upload_max_filesiz
 ## ✅ Step 3: Modify PHP Settings
 
 ### If Using **Select PHP Version → Options**
+
 - Locate and change the values:
 
-| Setting                | Recommended Value |
-|------------------------|-------------------|
-| `upload_max_filesize`  | `64M` or higher    |
-| `post_max_size`        | `64M` or higher    |
-| `max_execution_time`   | `300`              |
-| `max_input_time`       | `300`              |
-| `memory_limit`         | `256M` or higher   |
+| Setting               | Recommended Value |
+| --------------------- | ----------------- |
+| `upload_max_filesize` | `64M` or higher   |
+| `post_max_size`       | `64M` or higher   |
+| `max_execution_time`  | `300`             |
+| `max_input_time`      | `300`             |
+| `memory_limit`        | `256M` or higher  |
 
 Changes are saved automatically.
 
@@ -233,27 +242,32 @@ Use this guide to set a different PHP version for each domain or subdomain indiv
 ## ✅ Step-by-Step Instructions
 
 ### 1. **Log in to cPanel**
+
 - Go to: `https://yourdomain.com/cpanel`
 
 ---
 
 ### 2. **Open MultiPHP Manager**
+
 - Under the **Software** section, click **“MultiPHP Manager”**
 
 ---
 
 ### 3. **Select Domain/Subdomain**
+
 - You’ll see a list of all your domains and subdomains.
 - **Check the box** next to the domain you want to change (e.g., `example.com`, `app.example.com`)
 
 ---
 
 ### 4. **Choose PHP Version**
+
 - On the right, select the desired PHP version from the dropdown menu (e.g., `PHP 8.1`, `PHP 7.4`, etc.)
 
 ---
 
 ### 5. **Click “Apply”**
+
 - cPanel will apply the selected PHP version only to that domain.
 
 ---
@@ -274,7 +288,6 @@ Create a `phpinfo.php` file inside your project’s root folder:
 <?php phpinfo(); ?>
 ```
 
-
 # ⏱️ How to Create a Cron Job in cPanel for a Specific URL
 
 This guide shows how to schedule a cron job in **cPanel** to run a script or task by accessing a specific **URL** (e.g., Laravel task, webhook, or custom PHP script).
@@ -284,16 +297,19 @@ This guide shows how to schedule a cron job in **cPanel** to run a script or tas
 ## ✅ Steps to Add a Cron Job for a URL
 
 ### 1. **Log in to cPanel**
+
 - URL: `https://yourdomain.com/cpanel`
 
 ---
 
 ### 2. **Go to "Cron Jobs"**
+
 - Find it under the **Advanced** section.
 
 ---
 
 ### 3. **Set the Schedule**
+
 - Choose how often the URL should be triggered:
   - Example: every 5 minutes
     - Minute: `*/5`
@@ -309,16 +325,66 @@ This guide shows how to schedule a cron job in **cPanel** to run a script or tas
 Use `wget`, `curl`, or `lynx` to access the URL:
 
 #### Option 1: Using `wget`
+
 ```bash
 wget -q -O /dev/null https://yourdomain.com/your-script
 ---
 
+# 📧 How to Create Webmail Accounts for a Domain Using cPanel
+
+This guide explains how to create email addresses (e.g., `info@yourdomain.com`) using cPanel’s **Email Accounts** feature.
+
+---
+
+## ✅ Step-by-Step Guide
+
+### 1. **Log in to cPanel**
+- URL: `https://yourdomain.com/cpanel`
+
+---
+
+### 2. **Go to "Email Accounts"**
+- Found under the **Email** section.
+
+---
+
+### 3. **Click “Create”**
+
+---
+
+### 4. **Fill in Email Details**
+
+| Field            | Description                                 |
+|------------------|---------------------------------------------|
+| **Domain**        | Select your domain (e.g., `yourdomain.com`) |
+| **Username**      | Enter email prefix (e.g., `info`, `admin`)  |
+| **Password**      | Set a strong password or use generator      |
+| **Storage Space** | Set mailbox quota (e.g., 500MB or Unlimited)|
+
+---
+
+### 5. **Click “Create”**
+- Your email account will be created immediately.
+
+---
+
+## 📬 Accessing Webmail
+
+### 1. Via cPanel
+- Go to **Email Accounts** → Click **“Check Email”**
+
+### 2. Direct Login
+- Visit: `https://yourdomain.com/webmail`
+- Login with:
+  - **Email**: `info@yourdomain.com`
+  - **Password**: (you set earlier)
+
+---
 
 ## 🔒 Security Tips
 
 - Use strong passwords and 2FA (if available).
 - Always use HTTPS for login.
-- Regularly update your CMS (e.g., WordPress).
 - Monitor file changes and malware scans.
 
 ---
@@ -338,3 +404,4 @@ wget -q -O /dev/null https://yourdomain.com/your-script
 - Limit PHP versions per domain if needed via MultiPHP Manager.
 
 ---
+```
